@@ -11,7 +11,9 @@ Maven was installed and added to PATH .env and validated with the command "mvn -
 Almost everything went smoothly, followed the tutorial as is. The one thing there was a problem with was this command here: `heroku run java -version`
 The connection timed out.
 May be a firewall blocked the port 5000 for incoming traffic so can not connect the process to the terminal. Running Wireshark we can see in a ICMP message from the default gateway address that the "destination unreachable" is the reason, because of "communication administrative  filtered". So the solution was  to use a different network, which did resolve the issue. Changed from HVL provided Eduroam to a UiB provided Eduroam.
-At some point in the heroku tutorial we are asked to make a permanent log with that requires to add a credit card to verify the account. Skipped this step because of this.  
+At some point in the heroku tutorial we are asked to make a permanent log with that requires to add a credit card to verify the account. Skipped this step because of this.
+
+[Link to Heroku java site](https://damp-brushlands-26239.herokuapp.com/)
 
 ### Remarks
-Did not feel that I learned that much about the frameworks used and hopefully we are to learn more about them in the future. But the goal of the exercise was fulfilled
+Did not feel that I learned that much about the frameworks used and hopefully we are to learn more about them in the future. But the goal of the exercise was fulfilled.
