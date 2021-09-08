@@ -7,7 +7,7 @@ Did not understand wat was meant in the todo in the persistance.xml so asked for
 Step 5 in the tutorial mentions that we use lombok for simplifying the data object code, by auto-generationg getters and setters. Tried to copy paste the provided code but IntelliJ marked the lombok package as missing.
 Tried to add it as a dependency in the pom.xml but alas no result.
 Tried to add the pom.xml snippet provided at https://mvnrepository.com/artifact/org.projectlombok/lombok/1.18.12 but no better result either. 
-''' xml
+``` xml
 <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 <dependency>
     <groupId>org.projectlombok</groupId>
@@ -15,7 +15,7 @@ Tried to add the pom.xml snippet provided at https://mvnrepository.com/artifact/
     <version>1.18.12</version>
     <scope>provided</scope>
 </dependency>
-'''
+```
 
 In the depenencies tab in IntelliJ the lombok package is not present. Suspect this means that maven has not downloaded the jar.
 Tried to run 'mvn clean install' with the hope that the dependencies would be reloaded.
