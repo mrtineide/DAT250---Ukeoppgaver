@@ -1,3 +1,6 @@
 [submodule "java-getting-started"]
 	path = java-getting-started
 	url = https://github.com/heroku/java-getting-started
+[submodule "dat250-jpa-example"]
+	path = dat250-jpa-example
+	url = https://github.com/timKraeuter/dat250-jpa-example.git
