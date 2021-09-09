@@ -25,6 +25,7 @@ Then found out it by [this blogpost](https://stackoverflow.com/questions/9980869
 
 On step 6 in the tutorial 2 hours were spent trying to follow the tutorial step of making a new project. The project structure was incorrect for every iteration that was tried. 
 The fix was to not follow the tutorial but instead just edit the persistance.xml iterativly until the Unit test were green.
+The unit tests were green on one run but any run after, one test named checkFamily, fails. Dont know why. Did not try to fix it. Skipped this as it was green once before. The problem may be that in the setup of the DB enter new data in a table on each testrun, ie bad testsetup.
 
 Inspecting and connectig the database was done using this [tutorial] (https://www.jetbrains.com/help/datagrip/apache-derby.html) with Datagrip, the database IDE from Jetbrains.
 This could also be done in IntelliJ from the databases tab.
@@ -39,5 +40,11 @@ Here is an example of a table made:
 Here is a diagram of the tables made:
 
 ![Diagram of tables made](/db_tables.png)
+
+There is no link to the code used. It is a git submodule and therefore modifications in the submoduel files are not transfered.   
+
+
+## Experiment 2 - Banking/Credit Card example JPA
+
 
 
