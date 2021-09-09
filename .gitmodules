@@ -3,4 +3,4 @@
 	url = https://github.com/heroku/java-getting-started
 [submodule "dat250-jpa-example"]
 	path = dat250-jpa-example
-	url = https://github.com/timKraeuter/dat250-jpa-example.git
+	url = https://github.com/mrtineide/dat250-jpa-example
