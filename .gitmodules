@@ -1,6 +1,6 @@
 [submodule "java-getting-started"]
 	path = java-getting-started
-	url = https://github.com/mrtineide/java-getting-started
+	url = https://github.com/mrtineide/java-getting-started-
 [submodule "dat250-jpa-example"]
 	path = dat250-jpa-example
 	url = https://github.com/mrtineide/dat250-jpa-example
