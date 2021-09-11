@@ -62,4 +62,4 @@ This is the persistence view of the project:
 This is what tables were made in the database in the end:
 [!On disk database tables](db_tables_example2.png)
 
-[Link to the code in the used in this experiment](https://github.com/mrtineide/DAT250---Ukeoppgaver)
+[Link to the code in the used in this experiment can be found in the same repo as the dat250-jpa-example sumbodule ](https://github.com/mrtineide/DAT250---Ukeoppgaver)
