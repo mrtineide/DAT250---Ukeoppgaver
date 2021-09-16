@@ -27,7 +27,7 @@ On step 6 in the tutorial 2 hours were spent trying to follow the tutorial step 
 The fix was to not follow the tutorial but instead just edit the persistance.xml iterativly until the Unit test were green.
 The unit tests were green on one run but any run after, one test named checkFamily, fails. Dont know why. Did not try to fix it. Skipped this as it was green once before. The problem may be that in the setup of the DB enter new data in a table on each testrun, ie bad testsetup.
 
-Inspecting and connectig the database was done using this [tutorial] (https://www.jetbrains.com/help/datagrip/apache-derby.html) with Datagrip, the database IDE from Jetbrains.
+Inspecting and connectig the database was done using this [tutorial](https://www.jetbrains.com/help/datagrip/apache-derby.html) with Datagrip, the database IDE from Jetbrains.
 This could also be done in IntelliJ Ultimate from the databases tab.
 
 Getting some diagrams was done following using [this](https://www.jetbrains.com/help/datagrip/creating-diagrams.html)
@@ -47,19 +47,42 @@ Here is a diagram of the tables made:
 - Then had to look at the presentation slides for types of relations between the objects. 
 - Then decorated some fields and discussed with other students how to move forward. Turns out you need a List for things in classes that have a * to many relations. 
 - Should not the CreditCard have a relation back to the person? A creditcard should know who owns it.  
-- Should every side of a many to many relationships have the decorator?
-- Made test, fail suddenly to find symbol in TODO, changed @Data tag over @Entity tag fixed.
-- Same with person. Did not work changing the tags.
-- Either I get stack overflow(!) or compilation errors.
+- Should every side of a many to many relationships have the decorator? **No, only the owning side**
+- Made test and it failed. Suddenly Java compiler did not find a symbol in TODO, a class not changed since the previous part of the assignment. To fix this I swapped @Data tag over @Entity tag.
+- ~~Same with person. Did not work changing the tags~~
+- ~~Either I get stack overflow(!) or compilation errors~~.
 
-After some trial and error by trying different decorating with a mappedBy decorator the most helpful exception is this one: 
+~~After some trial and error by trying different decorating with a mappedBy decorator the most helpful exception is this one:~~ 
 ```Exception Description: An incompatible mapping has been encountered between [class no.hvl.dat250.jpa.basicexample.banking.Person] and [class no.hvl.dat250.jpa.basicexample.banking.Address]. This usually occurs when the cardinality of a mapping does not correspond with the cardinality of its backpointer.```
-This is as far the debugging was able to do. Was not able to work out the root of the problem here. 
+~~This is as far the debugging was able to do. Was not able to work out the root of the problem here.~~ 
+
+
+### The changes made to after feedback from TA to fix issues
+
+- Changed types of the List from ArrayList til List.
+This was maybe the root problem. 
+- Changed the decorator of Person class to Many-To-Many, which was in the first iteration but because of above problem a StackOverflow was thrown. 
+- Changed the mappedBy of the Many-To-Many decorator of Person class to be the residents, not id, by suggestion from the TA. 
+- Reverted the change of Person2 class to Person
+- Deleted all the old tables in the database by hand.
+- Ran the test once more. Then the object was persisted and the test was passed.
+
+These steps were made to fix the previous java exceptions. 
+
+Can see from by example the following example that the object was persisted:
+
+![Max Mustermann in the DB](db_max_muster.png)
+
+
 
 This is the persistence view of the project:
+
 ![Persistence view](db_tables_2.png)
 
 This is what tables were made in the database in the end:
-[!On disk database tables](db_tables_example2.png)
+
+![On disk database tables](db_tables_example2.png)
+
+Do not know where SEQUENCE table came from...
 
 [Link to the code in the used in this experiment can be found in the same repo as the dat250-jpa-example sumbodule ](https://github.com/mrtineide/DAT250---Ukeoppgaver)
