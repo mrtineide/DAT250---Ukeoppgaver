@@ -34,11 +34,11 @@ Getting some diagrams was done following using [this](https://www.jetbrains.com/
 
 Here is an example of a table made:
 
-![Table example](db_tables_example.png)
+![Table example](images/db_tables_example.png)
 
 Here is a diagram of the tables made:
 
-![Diagram of tables made](db_tables.png)
+![Diagram of tables made](images/db_tables.png)
 
 ## Experiment 2 - Banking/Credit Card example JPA
 
@@ -71,17 +71,17 @@ These steps were made to fix the previous java exceptions.
 
 Can see from by example the following example that the object was persisted:
 
-![Max Mustermann in the DB](db_max_muster.png)
+![Max Mustermann in the DB](images/db_max_muster.png)
 
 
 
 This is the persistence view of the project:
 
-![Persistence view](db_tables_2.png)
+![Persistence view](images/db_tables_2.png)
 
 This is what tables were made in the database in the end:
 
-![On disk database tables](db_tables_example2.png)
+![On disk database tables](images/db_tables_example2.png)
 
 Do not know where SEQUENCE table came from...
 
