@@ -35,7 +35,7 @@ Delete all that have status A:
 ![img_10.png](images/img_10.png)
 
 ### Bulk write
-It is almost the same as the 2. image in [Write](/dat250-expass3.md#Write) section 
+It is almost the same as the 2. image in [insertion](/expass3.md#inserting) section 
 ![img_11.png](images/img_11.png)
 
 ## Experiment 2
