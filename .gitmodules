@@ -4,3 +4,6 @@
 [submodule "dat250-jpa-example"]
 	path = dat250-jpa-example
 	url = https://github.com/mrtineide/dat250-jpa-example
+[submodule "dat250-sparkjava-counter"]
+	path = dat250-sparkjava-counter
+	url = https://github.com/mrtineide/dat250-sparkjava-counter
