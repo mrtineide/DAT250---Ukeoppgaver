@@ -7,3 +7,6 @@
 [submodule "dat250-sparkjava-counter"]
 	path = dat250-sparkjava-counter
 	url = https://github.com/mrtineide/dat250-sparkjava-counter
+[submodule "expass5"]
+	path = expass5
+	url = https://github.com/mrtineide/expass5
