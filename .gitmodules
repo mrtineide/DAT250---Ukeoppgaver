@@ -13,3 +13,7 @@
 [submodule "expass6"]
 	path = expass6
 	url = https://github.com/mrtineide/expass6
+[submodule "expass7"]
+	path = expass7
+	url = https://github.com/mrtineide/expass7
+	branch = master
